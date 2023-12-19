@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOW-JI-KAL</title>
+   
+</head>
+<body>
+
+    <header>
+        <h1>MEOW-JI-KAL</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li id="account"><a href="#">Account</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="loginForm" style="display:none;">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="signupForm" style="display:none;">
+            <h2>Signup</h2>
+            <form action="#" method="post">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Toggle between login and signup forms
+        document.getElementById('account').addEventListener('click', function() {
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('signupForm').style.display = 'none';
+        });
+    </script>
+ <a href="https://drive.google.com/file/d/1Yg_DElJqaluR2J-PoqPR-4KxJ4lOz3i7/view" target="_blank">Your Favourite Meow-Jik</a>
+</body>
+</html>
